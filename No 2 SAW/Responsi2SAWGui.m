@@ -88,7 +88,7 @@ function pushbutton2_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 opts = detectImportOptions('DATA RUMAH.xlsx'); %Mengambil File DATA RUMAH.xlsx
 opts.SelectedVariableNames = ([1]); %Mengambil Kolom Pertama (No 1)
-data1 = readtable('DATA RUMAH.xlsx', opts); Menyimpan %Kolom Pertama pada Data Rumah.xlsx sebagai Table dan disimpan pada Variabel Data 1
+data1 = readtable('DATA RUMAH.xlsx', opts); %Menyimpan Kolom Pertama pada Data Rumah.xlsx sebagai Table dan disimpan pada Variabel Data 1
 opts = detectImportOptions('DATA RUMAH.xlsx'); 
 opts.SelectedVariableNames = ([3:8]);  
 data2 = readtable('DATA RUMAH.xlsx', opts); %Kolom ke-3 sampai ke-8 pada Data Rumah.xlsx sebagai Table dan disimpan pada Variabel Data 2
